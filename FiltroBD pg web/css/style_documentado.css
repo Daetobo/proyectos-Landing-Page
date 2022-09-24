@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html> y es idéntico al selector html , excepto que su especificidad es mayor.
+todos los elementos podran acceder a las variables creadas debido a que está en el root */
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* se le aplica estilo al container el nav y la section */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* hacer que cuando un contenido se desborda del contenedor no sea visible con hidden */
+    padding: var(--padding-container);
+}
+
+/* se le aplica estilo todo el header */
+.hero{
+    width: 100%; /*el 100% del ancho del navegador para poner la imagen */
+    height: 100vh;/*el 100% del alto de la pg */
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid; /* para crear cuadriculas en la pag */
+    grid-template-rows: 100px 1fr; /* este atributo permite crear filas en este caso 2 filas, 1 de 100px y la otra del resto de la fraccion */
+    color: #fff;
+    
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,#0000008c 0%,#0000008c 100%), url('../Images/computer.jpg');
+    background-size: cover ; /* especifica el tamaño de las imágenes de fondo. */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); /* este atributo da la forma de la imagen se realiza con la pg clippy */
+    z-index: -1;
+}
+
+/* NAV */
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title{
+    font-weight: 300;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column; /* para que se ponga una al lado de otra ya que es una grid dentro del grid principal solo va a aplicar al grid del nav */
+    grid-auto-columns: max-content; /* indica que se ajuste al valor del contenido */
+    gap: 2em; /* espaciado entre cada elemento como un padding */
+    
+}
+
+.nav__items{
+    list-style: none;  /* quita los puntos de cada items li de las listas */ 
+    
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;/* quita el hipervinculo de los li de las listas */ 
+}
+
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer; /* cada que se pasa el mouse cambia el cursor para seleccionar */
+    display: none; /* desaparece el icon de menu para luego activarlo cuando sea para dispositivos moviles*/
+
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: var(--show,none);
+}
+
+/* HERO CONTAINER */
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: block;
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* ABOUT */
+
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color:var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+
+.about__main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+}
+
+.about__icons{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow:hidden;
+    margin: 0 auto;
+}
+
+.about__icon{
+    width: 40px;
+}
+
+/* knowledge */
+
+.knowledge{
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img{
+    width: 100%;
+    display: block;
+}
+
+.cta1{
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* PRICE */
+
+.price{
+    text-align: ceneter;
+    
+}
+
+.price__table{
+    padding-top: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.price__element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan:#696871;
+    --color-price:#1D293F;
+    --bg-cta: #fff;
+    --color-cta:#5454d4;
+    --color-items:#696871;
+}
+
+.price__element--best{
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #ff7143;
+    --color-plan:rgb(255 255 255 /75%);
+    --color-price: #fff;
+    --bg-cta: #9f3919;
+    --color-cta:#fff;
+    --color-items:#fff;
+}
+
+.price__name{
+    color:var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+
+.price__items{
+    margin-top: 35px;
+    display: grid;
+    gap:1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta{
+    background-color: var(--bg-cta);
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5); /*aplicar sombra */
+}
