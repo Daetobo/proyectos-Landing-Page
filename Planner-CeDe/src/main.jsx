@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
 import Index, { loader as tareasLoader } from './pages/Index'
 import NuevaTarea, { action as nuevaTareaAction } from './pages/NuevaTarea'
-import EditarTarea, { loader as tareaLoader, action as actualizarTareaAction } from './pages/EditarTarea'
+import EditarTarea, { loader as tareaLoader, action as actualizarTareaAction, action } from './pages/EditarTarea'
+import { action as eliminarTareaAction } from './components/Task'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       element: <EditarTarea />,
       loader: tareaLoader,
       action: actualizarTareaAction
+    },
+    {
+      path:'/tarea/:tareaId/eliminar',
+      action: eliminarTareaAction
     }
   ]
   }

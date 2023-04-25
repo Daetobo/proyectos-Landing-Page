@@ -1,4 +1,4 @@
-import { useLoaderData,Form,redirect, useActionData } from 'react-router-dom';
+import { useLoaderData,Form,redirect, useActionData,useNavigate } from 'react-router-dom';
 import { actualizarTarea, obtenerTarea } from '../data/Tareas';
 import Formulario from '../components/Formulario';
 
@@ -35,12 +35,19 @@ const EditarTarea = () => {
 
     const tarea = useLoaderData()
     const errores = useActionData()
+    const navigate = useNavigate()
 
     return (
         <>
             <h1 className='font-bold text-4xl font-sans text-amber-400 w-7/12 m-auto'>Editar tarea</h1>
             <p className='mt-3  text-gray-700 mb-4 w-7/12 m-auto'>A continuación podrás modificar los datos de una tarea</p>
-
+            <div className='flex justify-end mb-4 w-7/12 m-auto'>
+                <button className='bg-gray-500 font-bold text-white px-3 py-1 rounded-md uppercase hover:bg-slate-700'
+                 onClick={()=> navigate(-1)}
+                >
+                Volver
+                </button>
+            </div>
             <div className='w-full text-start'>
                 {/* {errores?.length && errores.map((error,i)=><Errores key={i}> {error} </Errores> )} */}
                     <Form

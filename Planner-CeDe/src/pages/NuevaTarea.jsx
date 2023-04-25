@@ -48,7 +48,6 @@ const NuevaTarea = () => {
                     
                     </Form> 
             </div>
-            
         </>
     );
 }
