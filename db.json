@@ -1,0 +1,124 @@
+{
+  "tareas": [
+    {
+      "nombre": "142- pendiente movimientos",
+      "responsable": "Juan Diego Urrego",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "media",
+      "notas": "hola",
+      "estado": "Pendiente",
+      "id": 1
+    },
+    {
+      "nombre": "142- Finalizada tareas",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Finalizada",
+      "id": 2
+    },
+    {
+      "nombre": "142- sin iniciar - consulta movi",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Sin iniciar",
+      "id": 3
+    },
+    {
+      "nombre": "142- pendiente- flujo itc",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Pendiente",
+      "id": 4
+    },
+    {
+      "nombre": "142- sin iniciar - consulta movi",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Sin iniciar",
+      "id": 5
+    },
+    {
+      "nombre": "142- pendiente- flujo itc",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Pendiente",
+      "id": 6
+    },
+    {
+      "nombre": "142- sin iniciar - consulta movi",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Sin iniciar",
+      "id": 7
+    },
+    {
+      "nombre": "142- Finalizada- flujo itc",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "alta",
+      "notas": "hola",
+      "estado": "Finalizada",
+      "id": 8
+    },
+    {
+      "nombre": "142- Finalizada tareas",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-21",
+      "vencimiento": "2023-04-28",
+      "prioridad": "media",
+      "notas": "hola",
+      "estado": "Finalizada",
+      "id": 9
+    },
+    {
+      "nombre": "gestionar caso urgente",
+      "responsable": "Daniel Escobar",
+      "fecha": "2023-04-23",
+      "vencimiento": "2023-04-26",
+      "prioridad": "baja",
+      "notas": "prueba",
+      "estado": "Sin iniciar",
+      "id": 10
+    },
+    {
+      "nombre": "sacar a mango",
+      "responsable": "Daniel Escobar",
+      "fecha": "2023-04-24",
+      "vencimiento": "2023-04-29",
+      "prioridad": "media",
+      "notas": "sacar a coco en la tarde",
+      "estado": "Sin iniciar",
+      "id": 11
+    },
+    {
+      "nombre": "prueba actualizada",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "2023-04-27",
+      "vencimiento": "2023-04-25",
+      "prioridad": "alta",
+      "notas": "prueba",
+      "estado": "Sin iniciar",
+      "id": 12
+    }
+  ]
+}
