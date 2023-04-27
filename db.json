@@ -18,16 +18,6 @@
       "prioridad": "alta",
       "notas": "hola",
       "estado": "Sin iniciar",
-      "id": 3
-    },
-    {
-      "nombre": "142- sin iniciar - consulta movi",
-      "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
-      "prioridad": "alta",
-      "notas": "hola",
-      "estado": "Sin iniciar",
       "id": 5
     },
     {
@@ -51,7 +41,7 @@
       "id": 7
     },
     {
-      "nombre": "142- Finalizada- flujo itc actualizada",
+      "nombre": "142- Finalizada- flujo itc ",
       "responsable": "Daniel Escobar Tobon",
       "fecha": "2023-04-21",
       "vencimiento": "2023-04-28",
@@ -61,24 +51,24 @@
       "id": 8
     },
     {
-      "nombre": "142- Finalizada tareas",
-      "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
+      "nombre": "urgente itc",
+      "responsable": "Daniel Escobar",
+      "fecha": "",
+      "vencimiento": "",
       "prioridad": "media",
-      "notas": "hola",
-      "estado": "Finalizada",
+      "notas": "",
+      "estado": "Sin iniciar",
       "id": 9
     },
     {
-      "nombre": "sacar a mango",
-      "responsable": "Daniel Escobar",
-      "fecha": "2023-04-24",
-      "vencimiento": "2023-04-29",
-      "prioridad": "media",
-      "notas": "sacar a coco en la tarde",
-      "estado": "Sin iniciar",
-      "id": 11
+      "nombre": "prueba filter",
+      "responsable": "Daniela Uribe",
+      "fecha": "",
+      "vencimiento": "",
+      "prioridad": "alta",
+      "notas": "",
+      "estado": "Pendiente",
+      "id": 10
     }
   ]
 }

@@ -22,7 +22,7 @@ const Columna = ({tareas}) => {
 }
 
 
-const Tarea = ({tareas}) => {
+const Tablero = ({tareas}) => {
 
     const sinIniciar = tareas.filter((task) => task.estado == 'Sin iniciar')
     const pendinete = tareas.filter((task) => task.estado == 'Pendiente')
@@ -42,4 +42,4 @@ const Tarea = ({tareas}) => {
     );
 }
 
-export default Tarea;
+export default Tablero;

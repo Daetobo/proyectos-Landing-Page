@@ -3,7 +3,7 @@ import { obtenerTareas } from '../data/Tareas';
 import Tablero from '../components/Tablero';
 
 
-export function loader() {
+export async function loader() {
     const tareas = obtenerTareas()
     return tareas
 }

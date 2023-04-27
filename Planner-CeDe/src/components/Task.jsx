@@ -17,7 +17,7 @@ const Task = ({tarea}) => {
         <>
             
             <div 
-                className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-50 hover:border-2 mb-2"
+                className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-slate-700 mb-5"
                 
             >
 
