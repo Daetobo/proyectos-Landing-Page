@@ -7,11 +7,10 @@ import Index, { loader as tareasLoader } from './pages/Index'
 import NuevaTarea, { action as nuevaTareaAction } from './pages/NuevaTarea'
 import EditarTarea, { loader as tareaLoader, action as actualizarTareaAction, action } from './pages/EditarTarea'
 import { action as eliminarTareaAction } from './components/Task'
-import Asignacion, { loader as asignacionTareasLoader } from './components/Asignacion'
+import Asignacion, {loader as tareaAsignacionLoader} from './components/Asignacion'
 
 
 const App = () => {
-  const [modal, setModal] = useState(false)
 
   const router = createBrowserRouter([
     {
@@ -25,7 +24,7 @@ const App = () => {
       {
         path: '/tarea/nueva',
         element: <Asignacion />,
-        loader: asignacionTareasLoader,
+        loader: tareaAsignacionLoader,
         action: nuevaTareaAction
       },
       {

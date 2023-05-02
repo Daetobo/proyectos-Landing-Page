@@ -1,15 +1,30 @@
+import { useState } from 'react'
 
 const Formulario = ({tarea}) => {
 
     return (
         <div className='w-7/12 m-auto'>
-
+            <div className="flex gap-6 mb-3">
+                <div className="w-2/12 mb-6 md:mb-0">
+                    <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="sprint">
+                        # Sprint
+                    </label>
+                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border focus:border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="sprint" type="text" name='sprint' defaultValue={tarea?.sprint} />
+                </div>
+                <div className="w-2/12 mb-6 md:mb-0">
+                    <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="tiempo">
+                        Tiempo
+                    </label>
+                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border focus:border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="tiempo" type="text" name='tiempo' defaultValue={tarea?.tiempo} placeholder="Minutos" />
+                </div>
+            </div>
+            
             <div className="flex flex-wrap -mx-3 mb-3">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="nombre">
                         Nombre tarea
                     </label>
-                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border focus:border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nombre" type="text" name='nombre' defaultValue={tarea?.nombre} />
+                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border focus:border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nombre" type="text" name='nombre' defaultValue={tarea?.nombre}/>
                 </div>
                 <div className="w-full md:w-1/2 px-3">
                     <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="responsable">
@@ -24,7 +39,7 @@ const Formulario = ({tarea}) => {
                     <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="fecha">
                         Fecha inicial
                     </label>
-                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="fecha" type="date" name='fecha' defaultValue={tarea?.fecha}/>
+                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="fecha" type="date" name='fecha' defaultValue={tarea?.fecha} />
                 </div>
                 
                 <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">

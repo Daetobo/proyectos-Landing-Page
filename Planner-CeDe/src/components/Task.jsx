@@ -43,7 +43,7 @@ const Task = ({tarea}) => {
                 </div>
 
                 <h6 className={`mb-2 ${prioridad == 'alta' ? 'bg-red-200 text-red-400' : prioridad == 'media' ? 'bg-amber-100 text-amber-400' : 'bg-green-200 text-green-500' } rounded-3xl  font-bold px-4 inline-block`}>{prioridad}</h6>
-                <h5 className="font-semibold tracking-tight text-gray-900 dark:text-white truncate font-mono">{nombre}</h5>
+                <h5 className="font-semibold tracking-tight text-gray-900 dark:text-white truncate">{nombre}</h5>
                 <p className="text-gray-400">{responsable}</p>
                 <p className="font-normal text-gray-700 dark:text-gray-400 truncate">{notas}</p>
                 <h6> <span className="font-semibold">vencimiento:</span> {vencimiento}</h6>

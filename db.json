@@ -1,6 +1,8 @@
 {
   "tareas": [
     {
+      "sprint": "140",
+      "tiempo": "60",
       "nombre": "142- Finalizada tareas",
       "responsable": "Daniel Escobar Tobon",
       "fecha": "2023-04-21",
@@ -11,64 +13,40 @@
       "id": 2
     },
     {
-      "nombre": "142- sin iniciar - consulta movi",
+      "sprint": "144",
+      "tiempo": "20",
+      "nombre": "prueba actualizada",
       "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
+      "fecha": "",
+      "vencimiento": "",
       "prioridad": "alta",
-      "notas": "hola",
+      "notas": "prueba",
+      "estado": "Sin iniciar",
+      "id": 3
+    },
+    {
+      "sprint": "144",
+      "tiempo": "4700",
+      "nombre": "",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "",
+      "vencimiento": "",
+      "prioridad": "alta",
+      "notas": "prueba 2",
+      "estado": "Sin iniciar",
+      "id": 4
+    },
+    {
+      "sprint": "144",
+      "tiempo": "10",
+      "nombre": "prueba 3",
+      "responsable": "Daniel Escobar Tobon",
+      "fecha": "",
+      "vencimiento": "",
+      "prioridad": "alta",
+      "notas": "prueba 3",
       "estado": "Sin iniciar",
       "id": 5
-    },
-    {
-      "nombre": "142- pendiente- flujo itc",
-      "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
-      "prioridad": "alta",
-      "notas": "hola",
-      "estado": "Pendiente",
-      "id": 6
-    },
-    {
-      "nombre": "142- sin iniciar - consulta movi",
-      "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
-      "prioridad": "alta",
-      "notas": "hola",
-      "estado": "Sin iniciar",
-      "id": 7
-    },
-    {
-      "nombre": "142- Finalizada- flujo itc ",
-      "responsable": "Daniel Escobar Tobon",
-      "fecha": "2023-04-21",
-      "vencimiento": "2023-04-28",
-      "prioridad": "alta",
-      "notas": "hola",
-      "estado": "Finalizada",
-      "id": 8
-    },
-    {
-      "nombre": "urgente itc",
-      "responsable": "Daniel Escobar",
-      "fecha": "",
-      "vencimiento": "",
-      "prioridad": "media",
-      "notas": "",
-      "estado": "Sin iniciar",
-      "id": 9
-    },
-    {
-      "nombre": "prueba filter",
-      "responsable": "Daniela Uribe",
-      "fecha": "",
-      "vencimiento": "",
-      "prioridad": "alta",
-      "notas": "",
-      "estado": "Pendiente",
-      "id": 10
     }
   ]
 }
